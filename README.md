@@ -67,9 +67,7 @@ Parameter	Description	Default Value
 | `--box_size` | Size of each QR block (higher = higher resolution)                   | 10         |
 | `--border`   | Border size around the QR code in blocks                             | 3          |
 
-```
 ### 🔥 Examples
-
 Generate a WiFi QR code for easy network access:
 ```
 python qr_gen.py --data "WIFI:T:WPA;S=GuestNetwork;P=GuestPassword;;" --filename "wifi_qr.png"
