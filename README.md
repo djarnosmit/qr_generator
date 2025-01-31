@@ -58,12 +58,15 @@ python qr_generator.py --data "https://guestwifi.example.com/login" \
 ```
 #### 📌 Parameter Explanations
 Parameter	Description	Default Value
-```
---data	The content to be encoded in the QR code	Required
---filename	The output file name for the QR code image	qrcode.png
---version	QR detail level (1-40, higher = more complex QR)	10
---box_size	Size of each QR block (higher = higher resolution)	10
---border	Border size around the QR code in blocks	2
+
+| Variable     | Description                                                          | Defaults   |
+|--------------|----------------------------------------------------------------------|------------|
+| `--data`     | A descriptive name for the IDP (displayed on the UI and logs).       | Required   |
+| `--filename` | The output file name for the QR code image                           | qrcode.png |
+| `--version`  | QR detail level (1-40, higher = more complex QR)                     | 5          |
+| `--box_size` | Size of each QR block (higher = higher resolution)                   | 10         |
+| `--border`   | Border size around the QR code in blocks                             | 3          |
+
 ```
 ### 🔥 Examples
 
