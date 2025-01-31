@@ -44,13 +44,13 @@ pip install qrcode pillow
 
 Run the script with default settings:
 ```
-python qr_generator.py --data "https://guestwifi.example.com/login"
+python qr_gen.py --data "https://guestwifi.example.com/login"
 ```
 ### 🎯 Custom Parameters
 
 You can specify additional parameters to customize the QR code:
 ```
-python qr_generator.py --data "https://guestwifi.example.com/login" \
+python qr_gen.py --data "https://guestwifi.example.com/login" \
   --filename "custom_qr.png" \
   --version 15 \
   --box_size 20 \
@@ -72,11 +72,11 @@ Parameter	Description	Default Value
 
 Generate a WiFi QR code for easy network access:
 ```
-python qr_generator.py --data "WIFI:T:WPA;S=GuestNetwork;P=GuestPassword;;" --filename "wifi_qr.png"
+python qr_gen.py --data "WIFI:T:WPA;S=GuestNetwork;P=GuestPassword;;" --filename "wifi_qr.png"
 ```
 Generate a GPS location QR code:
 ```
-python qr_generator.py --data "geo:52.3702,4.8952" --filename "gps_qr.png"
+python qr_gen.py --data "geo:52.3702,4.8952" --filename "gps_qr.png"
 ```
 ### 🛠️ Updating Dependencies
 
