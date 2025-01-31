@@ -15,81 +15,73 @@ First, create a **virtual environment** (recommended):
 
 ```bash
 python -m venv .venv
-
+```
 Activate the virtual environment:
 
-    macOS/Linux:
-
+macOS/Linux:
+```
 source .venv/bin/activate
-
+```
 Windows (cmd):
-
+```
 .venv\Scripts\activate
-
+```
 Windows (PowerShell):
-
-    .venv\Scripts\Activate.ps1
-
+```
+.venv\Scripts\Activate.ps1
+```
 Now install the required packages from requirements.txt:
-
+```
 pip install -r requirements.txt
-
+```
 📦 Alternative: Install dependencies manually
 
 If you prefer, you can install the required packages manually:
-
-pip install qrcode[pil]
-
-🔧 Usage
+```
+pip install qrcode pillow
+```
+## 🔧 Usage
 
 Run the script with default settings:
-
+```
 python qr_generator.py --data "https://guestwifi.example.com/login"
-
-🎯 Custom Parameters
+```
+### 🎯 Custom Parameters
 
 You can specify additional parameters to customize the QR code:
-
+```
 python qr_generator.py --data "https://guestwifi.example.com/login" \
   --filename "custom_qr.png" \
   --version 15 \
   --box_size 20 \
   --border 4
-
-📌 Parameter Explanations
+```
+#### 📌 Parameter Explanations
 Parameter	Description	Default Value
+```
 --data	The content to be encoded in the QR code	Required
 --filename	The output file name for the QR code image	qrcode.png
 --version	QR detail level (1-40, higher = more complex QR)	10
 --box_size	Size of each QR block (higher = higher resolution)	10
 --border	Border size around the QR code in blocks	2
-🔥 Examples
+```
+### 🔥 Examples
 
 Generate a WiFi QR code for easy network access:
-
+```
 python qr_generator.py --data "WIFI:T:WPA;S=GuestNetwork;P=GuestPassword;;" --filename "wifi_qr.png"
-
+```
 Generate a GPS location QR code:
-
+```
 python qr_generator.py --data "geo:52.3702,4.8952" --filename "gps_qr.png"
-
-🛠️ Updating Dependencies
+```
+### 🛠️ Updating Dependencies
 
 If new dependencies are added, update requirements.txt:
-
+```
 pip freeze > requirements.txt
-
-📄 License
+```
+### 📄 License
 
 This project is licensed under the MIT License – feel free to modify and use it as needed.
-
-
----
-
-### ✅ **Wat is er nieuw?**
-- **Toegevoegd:** Installatie-instructies met `requirements.txt`
-- **Toegevoegd:** Hoe je de **dependencies bijwerkt** (`pip freeze > requirements.txt`)
-- **Duidelijkere structuur** voor installatie en gebruik  
-
-Nu is je **README.md** volledig **Git-ready**! 🚀💡 Laat weten als je nog aanpassingen wilt! 😃
 
