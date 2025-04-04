@@ -70,7 +70,7 @@ Parameter	Description	Default Value
 ### 🔥 Examples
 Generate a WiFi QR code for easy network access:
 ```
-python qr_gen.py --data "WIFI:T:WPA;S=GuestNetwork;P=GuestPassword;;" --filename "wifi_qr.png"
+python qr_gen.py --data "WIFI:T:WPA;S:GuestNetwork;P:GuestPassword;;" --filename "wifi_qr.png"
 ```
 Generate a GPS location QR code:
 ```
